@@ -561,7 +561,7 @@ export default function LoginPage() {
       
       console.log('🚀 Sending LOGIN request to backend:', payload);
       
-      const { data } = await client.post("/api/auth/login", payload)
+      const { data } = await client.post("https://datacapture-backend.onrender.com/api/auth/login", payload)
       return data
     },
     onSuccess: (data) => {
